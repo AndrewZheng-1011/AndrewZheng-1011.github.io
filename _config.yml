@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Andrew Zheng"
-  avatar           : "/images/Profession\ Photo\ Small.PNG"
+  avatar           : "Profession Photo Small.PNG"
   bio              : "M.S. Student at Clemson University working on Koopman-based control with navigation systems"
   location         : "Location"
   employer         : "Dira Lab Research Assistant"
