@@ -11,7 +11,7 @@ title                    : "Andrew Zheng / Andrew Zheng's Github Page"
 title_separator          : "-"
 name                     : &name "Andrew Zheng"
 description              : &description "M.S. student working for DIRA Labratory"
-url                      : AndrewZheng-1011 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://AndrewZheng-1011.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : AndrewZheng-1011
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://AndrewZheng-1011/AndrewZheng-1011.github.io"
+  github           : AndrewZheng-1011
   google_plus      :
   keybase          :
   instagram        :
