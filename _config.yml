@@ -13,7 +13,7 @@ name                     : &name "Andrew Zheng"
 description              : &description "M.S. student working for DIRA Labratory"
 url                      : https://andrewzheng-1011.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "AndrewZheng-1011/AndrewZheng-1011.github.io"
+repository               : AndrewZheng-1011
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
