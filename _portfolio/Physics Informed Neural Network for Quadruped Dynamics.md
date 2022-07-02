@@ -1,6 +1,6 @@
 ---
 title: "Physics Informed Neural Network for Quadruped Dynamics "
-excerpt: "Leveraging linear operator theory for dynamical systems and neural network as universal function approximator, this neural network architecture aims to identify quadruped dynamics<br/><img src='/images/portfolio/KoopmanAEModel.png'>"
+excerpt: "Leveraging linear operator theory for dynamical systems and neural network as universal function approximator, this neural network architecture aims to identify quadruped dynamics<br/><img src='/images/portfolio/KoopmanAEModel.PNG'>"
 collection: portfolio
 ---
 
