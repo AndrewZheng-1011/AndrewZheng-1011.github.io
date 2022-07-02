@@ -1,1 +1,0 @@
-Folder directory for portfolio
