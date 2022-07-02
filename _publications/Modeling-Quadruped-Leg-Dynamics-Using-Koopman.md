@@ -6,7 +6,7 @@ excerpt: 'This paper uses linear operator theory to perform spectral analysis on
 date: 2022-07-28
 venue: 'MECC'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+citation: 'Zheng, Andrew. (2022). &quot;Modeling Quadruped Leg Dynamics on Deformable Terrains using Data-Driven Koopman Operators&quot; <i>MECC 2022 Conference</i>. 1(1).'
 ---
 This paper uses linear operator theory to perform spectral analysis on qadruped leg dynamics. Future works hopes to integrate controls using the system identified by the Koopman operator.
 
