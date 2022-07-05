@@ -13,4 +13,4 @@ Another area of research that has seen recent popularity in modeling dynamical s
 <br>
 Additionally, another factor that needs to be considered is the hybrid and nonlinear nature in quadruped leg dynamics. Quadruped leg dynamics is inherently hybrid as it consists of a swing and stance phase, causing discontinuity in the velocity and acceleration and the nonlinear nature stems from the angular orientation of the leg. To address both of these solutions, we use a mix between linear operator theory (Koopman) and neural networks (i.e. neural network's impressive function approximation) to showcase a self-supervised learning of the Koopman operator on quadruped dynamics.
 
-<img src="/images/portfolio/KoopmanAEModel.PNG" alt="KoopmanAEModel">
+![KoopmanAEModel](/images/portfolio/KoopmanAEModel.PNG)
