@@ -12,7 +12,7 @@ In this work, we (DIRA research lab) attempt to use Koopman operator theory as m
 <h3> Koopman Operator</h3>
 The Koopman operator theory consists of finding high dimensional.
 <br>
-[!KoopmanLifting](/images/portfolio/KoopmanLifting.PNG)
+![KoopmanLifting](/images/portfolio/KoopmanLifting.PNG)
 
 <h3> Quadruped Dynamics</h3>
 Quadruped leg dynamics 
