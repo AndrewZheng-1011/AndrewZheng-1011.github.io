@@ -9,6 +9,7 @@ Prediction of environmental dynamics (i.e. static and dynamic obstacles) and cor
 
 <h2> Preliminaries </h2>
 <h3> Real time Koopman Operator </h3>
+some text
 ![odmdKittiPipeline](/images/portfolio/ODMD_KITTI_Pipeline.PNG)
 
 
