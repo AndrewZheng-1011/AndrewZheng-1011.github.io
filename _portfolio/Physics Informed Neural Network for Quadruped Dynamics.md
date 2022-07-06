@@ -5,12 +5,19 @@ collection: portfolio
 ---
 
 <h2>Introduction</h2>
-Neural networks are considered as a universal function approximator as they are capable to approximating any type of function. However, although they are capable, it does not necessarily guarantee that the network learns the right approximation. Therefore, recent research has tried to incorporate physics informed neural networks as a way to guide neural networks to learn a manifold that resembles nonlinear dynamical systems. Some categories to these physics informed neural networks are Lagrangian neural networks, Hamiltonian Neural Networks, and Nueral ODEs. All these applications try to incorporate some "physic-informed" information/structure to learn the manifold associated with their corresponding concepts.
+Quadruped leg dynamics are nonlinear, high dimensional system, and hybrid. Due to these nonlinearities introduced through the orientation of the leg, as well as nonlinearities introduced through the coupling between body dynamics and leg dynamics of quadrupeds, many traditional locomotion of legged robots consist of using hierarchal control to generate a feasible center of mass trajectory with a global planner and use lower level control to deal with higher fidelity control.
+In this work, we (DIRA research lab) attempt to use Koopman operator theory as means to deal with the nonlinear hybrid leg dynamics of quadruped and neural networks as a a method to find the high dimensional lifting of the linear operator. This work focuses on system analysis of quadruped leg dynamics using the Koopman operator and showcasing the limits of the linear operator theory. 
+
+<h2> Preliminaries </h2>
+<h3> Koopman Operator</h3>
+The Koopman operator theory consists of finding high dimensional.
 <br>
+[!KoopmanLifting](/images/portfolio/KoopmanLifting.PNG)
+
+<h3> Quadruped Dynamics</h3>
+Quadruped leg dynamics 
 <br>
-Another area of research that has seen recent popularity in modeling dynamical system is Koopman Operator theory. One of its strengths lies in using data driven methods such as Extended Dynamic Mode Decomposition (EDMD) to find a lifting that represents the nonlinear system as a linear dynamical system in the lifted space. One of the difficulties in this method is finding a correct lifting.
+Note: Keep these portfolio to a paragraph or two at minimum.. brief and to the point
 <br>
-<br>
-Additionally, another factor that needs to be considered is the hybrid and nonlinear nature in quadruped leg dynamics. Quadruped leg dynamics is inherently hybrid as it consists of a swing and stance phase, causing discontinuity in the velocity and acceleration and the nonlinear nature stems from the angular orientation of the leg. To address both of these solutions, we use a mix between linear operator theory (Koopman) and neural networks (i.e. neural network's impressive function approximation) to showcase a self-supervised learning of the Koopman operator on quadruped dynamics.
 
 ![KoopmanAEModel](/images/portfolio/KoopmanAEModel.PNG)
