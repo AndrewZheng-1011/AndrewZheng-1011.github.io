@@ -1,6 +1,6 @@
 ---
 title: "Trajectory Prediction using Real-Time Koopman Operator"
-excerpt: "Usage of KITTI's multi-object tracking dataset using an online variant of Koopman Operator<br/><img src='/images/portfolio/Object Detection Pic.png'>"
+excerpt: "Usage of KITTI's multi-object tracking dataset using an online variant of Koopman Operator<br/><img src='/images/portfolio/ODMD_KITTI_Pipeline.PNG'>"
 collection: portfolio
 ---
 
