@@ -85,7 +85,6 @@ author:
   bio              : "M.S. Student at Clemson University working on Koopman-based control with legged robots"
   location         : "Location"
   employer         : "Dira Lab Research Assistant"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
@@ -184,9 +183,6 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
 
 
 # Defaults
@@ -236,14 +232,6 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 # Sass/SCSS
 sass:
