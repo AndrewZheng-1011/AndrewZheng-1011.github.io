@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<!--
 {% include base_path %}
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -61,8 +61,9 @@ layout: default
       {% include comments.html %}
     {% endif %}
   </article>
-
+-->
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
+<!--
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
       {% if site.data.ui-text[site.locale].related_label %}
@@ -76,3 +77,4 @@ layout: default
     </div>
   {% endif %}
 </div>
+-->
