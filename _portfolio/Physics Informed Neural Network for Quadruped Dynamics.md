@@ -10,6 +10,7 @@ In this work, we (DIRA research lab) attempt to use Koopman operator theory as m
 
 <h2> Brief Overview </h2>
 ![KoopmanLifting](/images/portfolio/KoopmanLifting.PNG)
+<br>
 The Koopman operator theory consists of finding a lifting (i.e. mapping to a infinite, or high in practice, dimensional space) where the dynamics of the system is represented linearly. Thus, the rich history in linear system analysis and our tools to analyze linear systems can be used. However, finding this lifting is not trivial. Thus, by combining the neural network framework, a great function approximation tool, we can negate the daunting task of finding the right lifted space. Note, the demerit to this methodology is that the lifting is a black box and there is not a explicit expression for this lifted space.
 
 <h2> Methodology </h2>
