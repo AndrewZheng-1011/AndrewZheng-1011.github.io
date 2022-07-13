@@ -13,7 +13,7 @@ In this work, we (DIRA research lab) attempt to use Koopman operator theory as m
 The Koopman operator theory consists of finding a lifting (i.e. mapping to a infinite, or high in practice, dimensional space) where the dynamics of the system is represented linearly. Thus, the rich history in linear system analysis and our tools to analyze linear systems can be used. However, finding this lifting is not trivial. Thus, by combining the neural network framework, a great function approximation tool, we can negate the daunting task of finding the right lifted space. Note, the demerit to this methodology is that the lifting is a black box and there is not a explicit expression for this lifted space.
 
 <h2> Methodology </h2>
-The quadruped locomotion was simulated in gazebo simulation using the champ quadruped model. A automated simulation testbed was generated (can run simulation testbed [here](https://github.com/AndrewZheng-1011/terrain_champ)) to conduct quadruped locomotion under the following parameters shown in the table below:
+The quadruped locomotion was simulated in gazebo simulation using the champ quadruped model. A automated simulation testbed was generated (can run simulation testbed <a href = "https://github.com/AndrewZheng-1011/terrain_champ" title="terrain_champ">here</a>) to conduct quadruped locomotion under the following parameters shown in the table below:
 ![gazeboTableSimParams](/images/portfolio/gazeboChampSimParams.PNG)
 
 ![KoopmanAEModel](/images/portfolio/KoopmanAEModel.PNG)
