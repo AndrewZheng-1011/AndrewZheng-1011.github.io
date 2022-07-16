@@ -6,7 +6,7 @@ collection: portfolio
 
 <h2>Introduction</h2>
 Quadruped leg dynamics are hybrid, nonlinear,  and high dimensional, causing many current approaches to modeling quadruped dynamics through linearization or reduced ordered models. This causes many traditional locomotion of legged robots consist of using hierarchal control to generate a feasible center of mass trajectory with a global planner used on a reduced model and a lower level control to deal with higher fidelity model.
-In this work, we (DIRA research lab) attempt to use Koopman operator theory as means to deal with the nonlinear hybrid leg dynamics of quadruped and neural networks as a a method to find the high dimensional lifting of the linear operator. This work focuses on system analysis of quadruped leg dynamics using the Koopman operator and showcasing the limits of the linear operator theory. 
+In this work, I attempt to use encoders and decoders neural nets with Koopman operator theory as means to deal with the nonlinear high dimensional hybrid leg dynamics of quadruped. This work focuses on modeling quadruped leg dynamics using the Koopman operator (i.e. capturing leg dynamics linearly in the lifted space) in hopes to use the rich history of linear control to control quadruped in future works . 
 
 <h2> Brief Overview </h2>
 ![KoopmanLifting](/images/portfolio/KoopmanLifting.PNG)
@@ -17,5 +17,6 @@ The Koopman operator theory consists of finding a lifting (i.e. mapping to a inf
 The quadruped locomotion was simulated in gazebo simulation using the champ quadruped model. A automated simulation testbed was generated (can run simulation testbed <a href = "https://github.com/AndrewZheng-1011/terrain_champ" title="terrain_champ">here</a>) to conduct quadruped locomotion under the following parameters shown in the table below:
 ![gazeboTableSimParams](/images/portfolio/gazeboChampSimParams.PNG)
 
+By feeding the data collected by the simulation environment into the Koopman autoencoder model, we use the soft constraints such as reconstruction error and linearity error to enforce the neural network to learn a dynamical system model. 
 ![KoopmanAEModel](/images/portfolio/KoopmanAEModel.PNG)
 <h2> Results & Conclusion </h2>
