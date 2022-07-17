@@ -20,3 +20,5 @@ The quadruped locomotion was simulated in gazebo simulation using the champ quad
 By feeding the data collected by the simulation environment into the Koopman autoencoder model, we use the soft constraints such as reconstruction error and linearity error to enforce the neural network to learn a dynamical system model. 
 ![KoopmanAEModel](/images/portfolio/KoopmanAEModel.PNG)
 <h2> Results & Conclusion </h2>
+The graph below shows the results of the Koopman operator, specifically the hip joint position and hip joint velocity. The two left most graph showcases the linearity prediction (prediction for n time steps) using the Koopman autoencoder model. The last four remaining graphs showcases the spectrum of the Koopman operator and the values corresponding with the most dominant eigenfunction.
+![KoopmanAEModel_Eigen_Results](/images/portfolio/prediction_eigenGraph.PNG)
