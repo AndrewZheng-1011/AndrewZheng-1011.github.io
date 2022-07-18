@@ -9,7 +9,6 @@ Quadruped leg dynamics are hybrid, nonlinear,  and high dimensional, causing man
 In this work, I attempt to use encoders and decoders neural nets with Koopman operator theory as means to deal with the nonlinear high dimensional hybrid leg dynamics of quadruped. This work focuses on modeling quadruped leg dynamics using the Koopman operator (i.e. capturing leg dynamics linearly in the lifted space) in hopes to use the rich history of linear control to control quadruped in future works . 
 
 <h2> Brief Overview </h2>
-![KoopmanLifting](/images/portfolio/KoopmanLifting.PNG)
 <br>
 Consider a nonlinear dynamical system
 
@@ -21,7 +20,7 @@ The Koopman Operator theory consists of finding a lifting (i.e. mapping to a inf
 $[Kg]\(x_k):=g\circ F(x) = g(x_{k+1})$
 
 where g is the set of observables and K is the operator acting on observables. Thus, the rich history in linear system analysis and our tools to analyze linear systems can be used. However, finding this lifting is not trivial. By combining the neural network framework, a great function approximation tool, we can negate the daunting task of finding the right lifted space. Note, the demerit to this methodology is that the lifting is a black box and there is not a explicit expression for this lifted space. To have a more in depth understanding of Koopman theory, I recommend Igor Mezic's [Spectrum of the Koopman Operator Theory](https://link.springer.com/content/pdf/10.1007/s00332-019-09598-5.pdf). For a lighter introduction, I recommend Steve Brunton's [Modern Koopman Theory for Dynamical Systems](https://arxiv.org/pdf/2102.12086.pdf).
-
+![KoopmanLifting](/images/portfolio/KoopmanLifting.PNG)
 <h2> Methodology </h2>
 The quadruped locomotion was simulated in gazebo simulation using the champ quadruped model. A automated simulation testbed was generated (can run simulation testbed <a href = "https://github.com/AndrewZheng-1011/terrain_champ" title="terrain_champ">here</a>) to conduct quadruped locomotion under the following parameters shown in the table below:
 ![gazeboTableSimParams](/images/portfolio/gazeboChampSimParams.PNG)
