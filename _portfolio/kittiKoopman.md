@@ -36,6 +36,7 @@ $P_{k+1} = P_k-\gamma_{k+1}P_kx_{k+1}x_{k+1}^T P_k$
 Notice, that after computing the Koopman operator, there is no additional computation of the inverse calculation for the operator. Other variations of the ODMD algorithm forgets older snapshots to aid in incorporating time varying dynamics. These algorithms were then tested on a stream of data from the KITTI dataset.
 
 <h2> Results </h2>
+These are the results of the online variant of Koopman predicting 0.4s into the future. Since the intention of the online variant of Koopman is to predict accurately for short time horizons, the results showcase sufficient prediction capability.
 ![Time0KITTIKoopman](/images/portfolio/0000 (3).jpg)
 ![Time7KITTIKoopman](/images/portfolio/0007.jpg)
 ![Time50KITTIKoopman](/images/portfolio/0050.jpg)
