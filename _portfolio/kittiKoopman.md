@@ -23,9 +23,9 @@ The following formulation of Online Dynamic Mode Decomposition (ODMD) comes to t
 <br/><br/>
 $A_k = (Y_kX_k)(X_kX_k^T)^{-1} = Q_kP_k$
 $A_{k+1} = A_k + \gamma_{k+1}(y_{k+1}-A_kx_{k+1})x_{k+1}^T P_k$
-<br/></br>
+<br/><br/>
 where $A_k$ is the computed Koopman operator, k is the number of snapshots, and $\gamma_{k+1}$ is
-<br/></br>
+<br/><br/>
 $\gamma_{k+1} = \frac{1}{1+x_{k+1}^TP_kx_{k+1}}$
 <br/><br/>
 Additionally, to recursively update $A_k$, the following matrix $P_k$ needs to be updated with the following form:
