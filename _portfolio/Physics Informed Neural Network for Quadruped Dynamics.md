@@ -5,8 +5,8 @@ collection: portfolio
 ---
 
 <h2>Introduction</h2>
-Quadruped leg dynamics are hybrid, nonlinear,  and high dimensional, causing many current approaches to modeling quadruped dynamics through linearization or reduced ordered models. This causes many traditional locomotion of legged robots consist of using hierarchal control to generate a feasible center of mass trajectory with a global planner used on a reduced model and a lower level control to deal with a higher fidelity model.
-In this work, I attempt to use encoders and decoders neural nets with Koopman operator theory as means to deal with the nonlinear high dimensional hybrid leg dynamics of quadruped. This work focuses on modeling quadruped leg dynamics using the Koopman operator (i.e. capturing leg dynamics linearly in the lifted space) in hopes to use the rich history of linear control to control quadruped in future works . 
+Quadruped leg dynamics are hybrid, nonlinear,  and high dimensional, causing many current approaches to modeling quadruped dynamics through linearization or reduced ordered models. This causes many traditional locomotion of legged robots to consist of using hierarchal control where a high level planner generates a feasible center of mass trajectory for a simplified model and a lower level controller generates torque control for a higher fidelity model.
+In this work, I attempt to use encoder and decoder neural networks with the Koopman operator theory as a means to deal with the nonlinear high dimensional hybrid leg dynamics of quadruped. This work focuses on modeling quadruped leg dynamics using the Koopman operator (i.e. capturing leg dynamics linearly in the lifted space) in hopes to use the rich history of linear control to control quadruped in future works . 
 
 <h2> Brief Overview </h2>
 ![KoopmanLifting](/images/portfolio/KoopmanLifting.PNG)
