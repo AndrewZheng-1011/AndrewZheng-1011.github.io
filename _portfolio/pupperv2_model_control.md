@@ -18,3 +18,4 @@ Since I take the perspective of a mechanical engineer, the most natural way of c
 ### Note to Self ###
 - Give more pictures for general procedure
 - Explain more on each procedure
+- Fix video link for mp4 files
