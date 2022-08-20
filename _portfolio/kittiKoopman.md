@@ -38,3 +38,6 @@ Notice, that after computing the Koopman operator, there is no additional comput
 <h2> Results </h2>
 These are the results of the online variant of Koopman predicting 0.4s into the future. Since the intention of the online variant of Koopman is to predict accurately for short time horizons, the results showcase sufficient prediction capability.
 ![gif_kitti_koopman_i11](/images/portfolio/animation_i11_iso_190.gif)
+
+
+TODO: Add segment talking about results of the spectrum of the operator and showcase it
