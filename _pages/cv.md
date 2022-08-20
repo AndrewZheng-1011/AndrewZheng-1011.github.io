@@ -18,3 +18,5 @@ redirect_from:
   </body>
 </html>
 
+
+<object data="/images/CV/Andrew_Zheng_CV.pdf" width="1000" height="1000" type='application/pdf'></object>
