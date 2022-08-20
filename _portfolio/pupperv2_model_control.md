@@ -16,7 +16,7 @@ Since I take the perspective of a mechanical engineer, the most natural way of c
 # Generation of Pupperv2 quadruped w/ Champ Baseline Controllers
 <video width="480" height="320" controls="controls">
   <source src="/images/portfolio/2022-07-31 pupperv2_teleop.mp4" type="video/mp4">
- </video>
+</video>
 ### Note to Self ###
 - Give more pictures for general procedure
 - Explain more on each procedure
