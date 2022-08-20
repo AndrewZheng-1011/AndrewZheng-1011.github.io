@@ -14,7 +14,7 @@ redirect_from:
     <title>Andrew Zheng's CV</title>
   </head>
   <body style="width:100%; height:100%; margin:0;">
-    <iframe src="https://docs.google.com/gview?url=https://github.com/AndrewZheng-1011/AndrewZheng-1011.github.io/raw/master/images/CV/Andrew_Zheng_CV.pdf &embedded=true" style="width:1080; height:1920;" frameborder="0"></iframe>
+    <iframe src="https://docs.google.com/gview?url=https://github.com/AndrewZheng-1011/AndrewZheng-1011.github.io/raw/master/images/CV/Andrew_Zheng_CV.pdf &embedded=true" style="width:100%; height:800;" frameborder="0"></iframe>
   </body>
 </html>
 
