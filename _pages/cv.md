@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-<html lang="en" style="width:100%; height:100%;">
+<html lang="en" style="width:100%; height:300%;">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title>kekayan's Resume</title>
