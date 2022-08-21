@@ -83,9 +83,9 @@ author:
   name             : "Andrew Zheng"
   avatar           : "Professional_Photo_Small.PNG"
   bio              : "M.S. Student at Clemson University working on Koopman-based control with legged robots"
-  location         : "Location"
+  location         : "Clemson University"
   employer         : "Dira Lab Research Assistant"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+#  googlescholar    : "http://yourfullgooglescholarurl.com"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -102,7 +102,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : ""
+#  orcid            : ""
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
