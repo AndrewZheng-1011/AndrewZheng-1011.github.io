@@ -17,6 +17,8 @@ Since I take the perspective of a mechanical engineer, the most natural way of c
 <video width="720" height="480" controls="controls">
   <source src="/images/portfolio/2022-07-31 pupperv2_teleop.mp4" type="video/mp4">
 </video>
+<!--
 ### Note to Self ###
 - Give more pictures for general procedure
 - Explain more on each procedure
+-->
