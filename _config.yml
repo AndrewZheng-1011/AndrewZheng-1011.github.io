@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Andrew Zheng"
   avatar           : "Professional_Photo_Small.PNG"
-  bio              : "M.S. Student at Clemson University working on Koopman-based control with legged robots"
+  bio              : "M.S. Student at Clemson University working on safe navigation and control for legged robots"
   location         : "Clemson University"
   employer         : "Dira Lab Research Assistant"
 #  googlescholar    : "http://yourfullgooglescholarurl.com"
