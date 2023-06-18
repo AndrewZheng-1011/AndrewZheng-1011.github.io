@@ -15,7 +15,7 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
-## Publications
+<!--## Publications -->
 0. **Safe Navigation Density: Analytical Construction** \
    Andrew Zheng, Sriram S.K.S. Naryanan, and Umesh Vaidya. Submitted to _IEEE Robotics and Automation Letters (RA-L)_.
 0. **Off-Road Navigation of Legged Robots Using Linear Transfer Operators**\
