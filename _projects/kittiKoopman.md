@@ -1,7 +1,7 @@
 ---
 title: "Trajectory Prediction using Real-Time Koopman Operator"
 excerpt: <img src='/images/projects/kitti_odmd/ODMD_KITTI_Pipeline.PNG' alt='Pipeline for ODMD with Koopman on KITTI Dataset'>
-collection: portfolio
+collection: projects
 ---
 
 <h2> Introduction </h2>
