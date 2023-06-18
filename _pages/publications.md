@@ -14,3 +14,14 @@ author_profile: true
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
+## Publications
+0. **Safe Navigation Density: Analytical Construction** \
+   Andrew Zheng, Sriram S.K.S. Naryanan, and Umesh Vaidya. Submitted to _IEEE Robotics and Automation Letters (RA-L)_.
+0. **Off-Road Navigation of Legged Robots Using Linear Transfer Operators**\
+   Joseph Moyalan, Andrew Zheng, Sriram S.K.S. Narayanan, and Umesh Vaidya. Submitted to _Model, Estimation, and Control Conference (MECC)_.
+0. **Artificial Neural Network Based Terrain Reconstruction for Off-road Autonomous Vehicles Using LiDAR** \
+   Sarang Sutavani, Andrew Zheng, et al. Submitted to _Ground Vehicle Systems Engineering and Technology Symposium (GVSET)_.
+0. **Modeling Quadruped Leg Dynamics on Deformable Terrain using Data-Driven Koopman Operators**\
+   Alexander Krolicki, Dakota Rufino, Andrew Zheng, Sriram S.K.S. Narayanan, Jackson Erb, and Umesh Vaidya. Submitted to _IFAC-PapersOnLine 55.37 (2022): 420-425_. [Link](https://www.sciencedirect.com/science/article/pii/S2405896322028622)
+
