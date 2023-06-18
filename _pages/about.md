@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Hi!<br>
-My name is Andrew Zheng, and I am currently pursuing my Masters degree in Mechanical Engineering at Clemson University. I currently work for the Distributed Intelligence and Robot Autonomy (DIRA) lab where my main research focuses on using Koopman operator for control on legged robots. A general overview of my areas of interest are nonlinear optimal control on robotic systems and the application of neural networks in state estimation, planning, and control.
+My name is Andrew Zheng, and I am currently pursuing my M.S. Thesis in Mechanical Engineering at Clemson University. I currently work for the Distributed Intelligence and Robot Autonomy (DIRA) lab where my main research focuses on using density formulation for save navigation on legged robots. A general overview of my areas of interest are planning and optimal control for robotic systems.
 <br>
 <br>
 If you wish to contact me, you can email me at azheng@clemson.edu
