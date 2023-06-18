@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Andrew Zheng / Andrew Zheng's Github Page"
+title                    : "Andrew Zheng"
 title_separator          : "-"
 name                     : &name "Andrew Zheng"
 description              : &description "M.S. student working for DIRA Labratory"
