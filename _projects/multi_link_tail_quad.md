@@ -14,9 +14,10 @@ In other words, there are challenges for legged robots in environments where one
 actuator to increase the freedom of movement. Inspired by cat-like motions, this project incorporates a 2 degree of freedom (DoF) tail, in which the work uses a time-based switching controller
 to achieve better landing rates in contact critical terrains. A diagram of the control scheme is seen. For more details, see the following [paper](https://github.com/AndrewZheng-1011/AndrewZheng-1011.github.io/blob/master/docs/Analysis_of_Open_Loop_Tail_Control_On_Quadruped_Locomotion_in_Contact_Critical_Terrains.pdf).
 ## Results
-We show results of the legged robot walking nominally off the terrain. As seen, the controller actuates during freefall, orienting the rigid body towards a stable position. As it approaches
-the ground, it lands on four legs, continuing its trot.
-
 <p align="center">
   <img src='/images/projects/multi_link_tail/two_tail_switch_control.gif'/>
 </p>
+
+
+We show results of the legged robot walking nominally off the terrain. As seen, the controller actuates during freefall, orienting the rigid body towards a stable position. As it approaches
+the ground, it lands on four legs, continuing its trot. To run the following code, see the following [repository](https://github.com/AndrewZheng-1011/quad-sdk/tree/add-multi-link-tail-controller).
