@@ -1,6 +1,6 @@
 ---
 title: "Density Navigation for Quadruped Locomotion"
-excerpt: <img src='/images/portfolio/density_nav_quadruped/go1_hw_feedback_density_planner.gif' width='640' height='360'/>
+excerpt: <img src='/images/portfolio/density_nav_quadruped/go1_hw_fb_density_planner.gif' width='640' height='360'/>
 collection: portfolio
 ---
 
