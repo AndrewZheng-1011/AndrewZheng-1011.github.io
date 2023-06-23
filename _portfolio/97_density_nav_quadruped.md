@@ -24,7 +24,8 @@ We show results in both simulations and hardware. In simulation, we show the qua
     <source src="/images/portfolio/density_nav_quadruped/go1_density_nav_2obs_2x.mp4" type="video/mp4">
 </video>
 
-We then show on hardware, where the density motion plan navigates around the chair (obstacle) using a NMPC.
+</br>
+We then show on hardware, where the density motion plan navigates around the chair (obstacle) and goes towards the goal, which is tracked using a NMPC.
 
 <video width="720" height="480" controls="controls">
     <source src="/images/portfolio/density_nav_quadruped/go1_hw_feedback_density_planner.mp4" type="video/mp4">
