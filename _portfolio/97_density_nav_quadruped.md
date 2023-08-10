@@ -12,7 +12,7 @@ This project incorporates the density formulation from the following paper submi
 It incorporates the high level plan of the following dynamics $\dot x = u$ and maps to a centroidal reference trajectory of the following dynamic form:
 
 
-$$\mathbf{M}(\ddot{\mathbf{q}}) + \mathbf{C}(\mathbf{q}, \dot{\mathbf{q}}) + \mathbf{G}(\mathbf{q}) = \mathbf{B}(\mathbf{q})\mathbf{\tau}$$
+$$\mathbf{M}(\mathbf{q})\ddot{\mathbf{q}} + \mathbf{C}(\mathbf{q}, \dot{\mathbf{q}})\dot{\mathbf{q}} + \mathbf{G}(\mathbf{q}) = \mathbf{B}(\mathbf{q})\mathbf{\tau}$$
 
 where $\mathbf{M}$ is the inertial matrix, $\mathbf{C}$ contains the centripetal and coriolis terms, $\mathbf{G}$ is the gravitational field, $\mathbf{B}$ is the control matrix, $\mathbf{\tau}$ is the joint torques, and $\mathbf{q} \in \mathbb{R}^{24}$ are the states for the dynamical system. This is then incorporated into a nonlinear model predictive controller (NMPC), where the optimized control trajectory is tracked with a torque-level control. The schematic diagram describes the process.
 
