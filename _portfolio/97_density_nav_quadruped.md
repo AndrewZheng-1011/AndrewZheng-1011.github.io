@@ -8,7 +8,7 @@ collection: portfolio
 <p align="center">
   <img src='/images/portfolio/density_nav_quadruped/quad_diagram.png'/>
 </p>
-This project incorporates the density formulation from the following paper submitted to Robotics Automations and Letters (RA-L), titled "Safe Navigation Using Density Function: Analytical Construction" onto quadrupeds.
+This project incorporates the density formulation from the following [paper](https://arxiv.org/pdf/2306.15830.pdf) submitted to Robotics Automations and Letters (RA-L), titled "Safe Navigation Using Density Function: Analytical Construction" onto quadrupeds.
 It incorporates the high level plan of the following dynamics $\dot x = u$ and maps to a centroidal reference trajectory of the following dynamic form:
 
 
