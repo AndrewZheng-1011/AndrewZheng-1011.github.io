@@ -29,7 +29,9 @@ modeled the interaction force by 3 core components:
 ### Predictive Time to Collision (TTC) Algorithms
 The predictive TTC algorithms relies on a linear velocity assumption for the obstacles/neighboring agents. Base of this assumption and a sensing radius, a time to collision is computed for each neighboring agent's future position under linear velocity assumption. If the time to collision is finite, a corresponding reactive force is computed based off a scaling parameter. The core predictive avoidance force is defined as such:
 <br/><br/>
+
 $f_{avoid} := \frac{max(\tau_h - \tau, 0)}{\tau}\bf{n}_{AB}$
+
 <br/><br/>
 where $\tau_h$ is the cutoff time to collision horizon, $\tau$ is the time to collision, and $\bf{n_{AB}}$ is the normal direction with respect to the future collision.
 
