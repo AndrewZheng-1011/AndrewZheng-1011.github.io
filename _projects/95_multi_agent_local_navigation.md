@@ -28,16 +28,16 @@ modeled the interaction force by 3 core components:
 
 ### Predictive Time to Collision (TTC) Algorithms
 The predictive TTC algorithms relies on a linear velocity assumption for the obstacles/neighboring agents. Base of this assumption and a sensing radius, a time to collision is computed for each neighboring agent's future position under linear velocity assumption. If the time to collision is finite, a corresponding reactive force is computed based off a scaling parameter. The core predictive avoidance force is defined as such:
-```math
-f_{avoid} := \frac{max(\tau_h - \tau, 0)}{\tau}\bf{n}_{AB}
-```
+<br/><br/>
+$f_{avoid} := \frac{max(\tau_h - \tau, 0)}{\tau}\bf{n}_{AB}$
+<br/><br/>
 where $\tau_h$ is the cutoff time to collision horizon, $\tau$ is the time to collision, and $\bf{n_{AB}}$ is the normal direction with respect to the future collision.
 
 ### Sampling-based VO Algorithm
 The sampling-based VO algorithm uses sampling of admissible candidate velocities (i.e. velocity bounds) to find the best control law for the agent. Given the candidate velocities, a cost function is formulated which penalizes the candidate velocities that are within the conic regions representing the velocity obstacles. Moreso, candidate velocities ($\bf{v}^{vcand}$) within the VO region can be represented by the time to collision ($\tau$). Therefore, the best sampled candidate velocity minimizes the following cost function:
-```math
-min_{v^{vcand}_i} J = \alpha ||\bf{v}_i^{vcand} - \bf{v}^{goal} || + \beta ||\bf{v}_i^{vcand} - \bf{v} || + \frac{\gamma}{\tau}
-```
+<br/><br/>
+$min_{v^{vcand}_i} J = \alpha ||\bf{v}_i^{vcand} - \bf{v}^{goal} || + \beta ||\bf{v}_i^{vcand} - \bf{v} || + \frac{\gamma}{\tau}$
+<br/><br/>
 where $\bf{v}^{goal}$ is the goal velocity, $\bf{v}$ is the current velocity, and $\alpha, \beta, \gamma$, are tunable parameters. Therefore, the cost function is a management between penalization of difference in candidate velocity to goal, candidate velocity to current, and candidate velocities within VO's represented by $\tau$.
 
 ## Simulation Results
