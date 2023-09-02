@@ -1,3 +1,8 @@
+---
+title: "Multiagent Local Navigation"
+excerpt: <img src='/images/projects/multi_agent_local_nav/3_agents_TTC.gif'/>
+collection: projects
+---
 # Multiagent Local Navigation
 In this work, I analyze classical multi agent local navigation techniques. The following algorithms
 were simulated and compared with one another:
