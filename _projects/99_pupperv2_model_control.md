@@ -1,6 +1,6 @@
 ---
 title: "Remodel of Stanford Pupper v2.0 and Integration of Baseline Controller"
-excerpt: <img src='/images/projects/pupperv2/pupperv2_description.PNG'>
+excerpt: <img src='/images/projects/pupperv2/pupperv2_description.PNG' width="280" height="350">
 collection: projects
 ---
 # Introduction
