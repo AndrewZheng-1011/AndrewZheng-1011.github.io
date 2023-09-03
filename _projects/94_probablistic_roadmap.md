@@ -56,25 +56,25 @@ The query phase consisted of sampling a random start and goal configuration and 
 # Results
 The objective is to find a feasible solution for a given robot in the following environment:
 <p align="center">
-  <img src='/images/projects/basic_prm/prm_environment.PNG' width="280" height="350"/>
+  <img src='/images/projects/basic_prm/prm_environment.PNG' width="240" height="300"/>
 </p>
 
 I show the construction, query phase, and the resulting path generated from A* search of the roadmap.
 ## Disk Robot
 <div class="row">
   <div class="col prm_disk">
-    <img src='/images/projects/basic_prm/prm_disk_construction_phase.PNG' width="280" height="350"/>
-    <img src='/images/projects/basic_prm/prm_disk_query_phase.PNG' width="280" height="350"/>
-    <img src='/images/projects/basic_prm/prm_disk_path.PNG' width="280" height="350"/>
+    <img src='/images/projects/basic_prm/prm_disk_construction_phase.PNG' width="240" height="300"/>
+    <img src='/images/projects/basic_prm/prm_disk_query_phase.PNG' width="240" height="300"/>
+    <img src='/images/projects/basic_prm/prm_disk_path.PNG' width="240" height="300"/>
   </div>
 </div>
 
 ## Rectangular Robot
 <div class="row">
   <div class="col prm_rectangle">
-    <img src='/images/projects/basic_prm/prm_rectangle_construction_phase.PNG' width="280" height="350"/>
-    <img src='/images/projects/basic_prm/prm_rectangle_query_phase.PNG' width="280" height="350"/>
-    <img src='/images/projects/basic_prm/prm_rectangle_path.PNG' width="280" height="350"/>
+    <img src='/images/projects/basic_prm/prm_rectangle_construction_phase.PNG' width="240" height="300"/>
+    <img src='/images/projects/basic_prm/prm_rectangle_query_phase.PNG' width="240" height="300"/>
+    <img src='/images/projects/basic_prm/prm_rectangle_path.PNG' width="240" height="300"/>
   </div>
 </div>
 
