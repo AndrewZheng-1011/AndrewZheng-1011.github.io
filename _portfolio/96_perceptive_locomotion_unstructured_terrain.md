@@ -12,16 +12,26 @@ As legged locomotion traditionally decouples the problem, the two main trajector
 
 As a result, the methodology of adapting the reference trajectory works adequately well for the quadruped to walk over terrains such as ramps, stairs, pits, etc. Results can be seen in the subsection below, along with a case of failure.
 ## Simulation Results
+Simulation results of quadruped in a environment with stairs of 10cm in height and 20cm in depth.
 <video width="720" height="480" controls="controls">
     <source src="/videos/perceptive_locomotion_unstructured_terrain/stairs_10cm_default_ee_pos_cost.mp4" type="video/mp4">
 </video>
 
 ## Hardware Results
-<video width="720" height="480" controls="controls">
+Hardware results w/ static walking gait for stairs of 6-12cm in height and 25cm in depth.
+<video width="720" height="400" controls="controls">
     <source src="/videos/perceptive_locomotion_unstructured_terrain/experimental_stairs_static_walk.mp4" type="video/mp4">
 </video>
 
 ## Failure Cases
+Hardware results w/ trot gait for stairs of 6-12cm in height and 25cm in depth.
 <video width="720" height="480" controls="controls">
     <source src="/videos/perceptive_locomotion_unstructured_terrain/experimental_stairs_trot.mp4" type="video/mp4">
 </video>
+
+# Methodology
+
+
+# Discussions
+
+# Conclusions
