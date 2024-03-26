@@ -1,6 +1,6 @@
 ---
 title: "Perceptive Locomotion on Unstructured Terrain"
-excerpt: <img src='/videos/perceptive_locomotion_unstructured_terrain/stairs_10cm_default_ee_pos_cost.gif' />
+excerpt: <img src='/videos/perceptive_locomotion_unstructured_terrain/experimental_stairs_static_walk_view.gif' />
 collection: portfolio
 ---
 # Summary
@@ -20,7 +20,7 @@ Simulation results of quadruped in a environment with stairs of 10cm in height a
 ## Hardware Results
 Hardware results w/ static walking gait for stairs of 6-12cm in height and 25cm in depth.
 <video width="720" height="400" controls="controls">
-    <source src="/videos/perceptive_locomotion_unstructured_terrain/experimental_stairs_static_walk.mp4" type="video/mp4">
+    <source src="/videos/perceptive_locomotion_unstructured_terrain/experimental_stairs_static_walk_view.mp4" type="video/mp4">
 </video>
 
 ## Failure Cases
