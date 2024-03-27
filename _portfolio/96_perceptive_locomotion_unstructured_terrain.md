@@ -4,6 +4,9 @@ excerpt: <img src='/videos/perceptive_locomotion_unstructured_terrain/experiment
 collection: portfolio
 ---
 # Summary
+<p align="center">
+    <img src="/images/portfolio/perceptive_locomotion_unstructured_terrain/legged_locomotion_adaptation_module.png" />
+</p>
 This work utilizes adaptation of reference trajectories for legged locomotion given map information. 
 By utilizing the map information that describes the geometry, traversability, and etc. of the quadruped, we adapt the trajectories of the quadruped. 
 As legged locomotion traditionally decouples the problem, the two main trajectories that were modified are:
