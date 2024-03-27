@@ -6,6 +6,7 @@ collection: portfolio
 # Summary
 <p align="center">
     <img src="/images/portfolio/perceptive_locomotion_unstructured_terrain/legged_locomotion_adaptation_module.png" />
+    <figcaption>Figure 1: Schematic Diagram of Perceptive Legged Locomotion</figcaption>
 </p>
 As shown in the schematic diagram above, this work utilizes a Legged Locomotion Adaptation Module to modify reference trajectories for legged locomotion given map information. 
 By utilizing map information that describes the geometry, edge, and traversability of the environment and a high level motion command, this work categorizes the locomotion problem into two motion trajectories that are to be transformed:
