@@ -42,9 +42,8 @@ It is best look at the framework from Figure 1 starting from the input sources. 
 
 Independently of this motion trajectory, there also exists the input source in the form of the environment the robot is occupying. A 2.5D discretized elevation map is constructed from the environment by utilizing the [grid map](https://github.com/ANYbotics/grid_map) package, where filters such as in-painting, denoising, and edge detection are readily availble. Therefore, to form a environmental traversability metric, we construct a layer in the grid map $T_{env}(\mathbf{p}) \in [0, 1]$, where $\mathbf{p} \in \mathbb{R}^2$ is the position in the transverse plane, to signify how traversable different position within the environment is:
 
-```math
-T(\mathbf{p}) =  w_1(h - \bar h) + w_2(s(h)),
-```
+$$T(\mathbf{p}) =  w_1(h - \bar h) + w_2(s(h)),$$
+
 where $w_1 + w_2 = 1$ are the weights, $(h - \bar h)$ is the roughness defined by the difference between the height and the smooth height, and $s(h)$ is the slope defined as the projection of the normal vector along gravity.
 
 ## Legged Locomotion Adaptation Module
