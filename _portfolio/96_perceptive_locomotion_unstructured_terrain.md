@@ -8,7 +8,7 @@ collection: portfolio
     <img src="/images/portfolio/perceptive_locomotion_unstructured_terrain/legged_locomotion_adaptation_module.png" />
     <figcaption>Figure 1: Schematic Diagram of Perceptive Legged Locomotion</figcaption>
 </p>
-As shown in the schematic diagram above, this work utilizes a Legged Locomotion Adaptation Module to modify reference trajectories for legged locomotion given map information. 
+As shown in Figure 1, this work utilizes a Legged Locomotion Adaptation Module to modify reference trajectories for legged locomotion given map information. 
 By utilizing map information that describes the geometry, edge, and traversability of the environment and a high level motion command, this work categorizes the locomotion problem into two motion trajectories that are to be transformed:
 1. The center of mass trajectory for generic motion planning of a single rigid body over rough terrains
 2. Foothold / Swing Trajectory of the leg over rough terrains
@@ -34,7 +34,20 @@ Hardware results w/ trot gait for stairs of 6-12cm in height and 25cm in depth.
     <source src="/videos/perceptive_locomotion_unstructured_terrain/experimental_stairs_trot.mp4" type="video/mp4">
 </video>
 
-# Methodology
+# General Architecture Overview
+To understand briefly how the general architecture works, I will explain in more details about different components. More specifically, details about the the input sources and the Legged Locomotion Adaptaion Module will be expanded on while the controller and estimator will be briefly highlighted.
+
+## Input Sources
+It is best look at the framework from Figure 1 starting from the input sources. The input starts with a general high-level motion trajectory. This can be in the form of a teleoperator control giving velocity commands to the robot, a target pose, or a high-level planner (e.g. A*, RRT-KD, etc.). Note, these high-level motion trajectories need not to be a fixed trajectory. 
+
+Independently of this motion trajectory, there also exists the input source in the form of the environment the robot is occupying. A 2.5D discretized elevation map is constructed from the environment by utilizing the [grid map](https://github.com/ANYbotics/grid_map) package, where filters such as in-painting, denoising, and edge detection are readily availble. Therefore, to form a environmental traversability metric, we construct a layer in the grid map $T_{env}(\mathbf{p}) \in [0, 1]$, where $\mathbf{p} \in \mathbb{R}^2$ is the position in the transverse plane, to signify how traversable different position within the environment is:
+
+```math
+T(\mathbf{p}) =  w_1(h - \bar h) + w_2(s(h)),
+```
+where $w_1 + w_2 = 1$ are the weights, $(h - \bar h)$ is the roughness defined by the difference between the height and the smooth height, and $s(h)$ is the slope defined as the projection of the normal vector along gravity.
+
+## Legged Locomotion Adaptation Module
 
 
 # Discussions
