@@ -64,7 +64,9 @@ T(\mathbf{x}) \geq 0,$$
 where $\mathbf{p_i}$ are the foothold location for the $i$th leg, $T(\mathbf{x})$ is the traversability metric defined over the states of the legged robot $\mathbf{x}$, $h_{foot,i} = h_{surface}(\mathbf{p})$ ensures that the foot of the quadruped lies on the surface of the environment, and $T(\mathbf{x}) \geq 0$ is ensuring that the solution is over a traversability threshold.
 
 There are have been various works that have address this some degree, this work looks to take a simplistic approach of using a local search base method to find locally optimal traversability foothold defined by the following metric:
+
 $$T(\mathbf{x}) = T_{env}(\mathbf{p}) + J_{default config}(\mathbf{x}),$$
+
 where $J_{default config}$ is a cost to such that the foothold selected is close to the default joint configuration. Note, better cost can be utilize that gives more stability notions, but default joint configuration is adequate enough.
 
 Once a foothold that is _aware_ of the environment has been selected, these are then utilized as contraints and reference to the model predictive controller.
