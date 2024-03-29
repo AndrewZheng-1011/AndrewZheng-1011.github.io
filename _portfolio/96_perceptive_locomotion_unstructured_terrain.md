@@ -72,7 +72,7 @@ Once a foothold that is _aware_ of the environment has been selected, these are 
 ## State Estimation
  
 ## Control
-The control problem heavily relies on the [ocs2] repository, that handles optimial control formulation for switched systems. As stated in the subsection **Perceptive Leg Adaptation Module**, the adapted reference trajectories are used as either reference trajectories, or constraints to the control formulation.
+The control problem heavily relies on the [ocs2](https://github.com/leggedrobotics/ocs2) repository, that handles optimial control formulation for switched systems. As stated in the subsection **Perceptive Leg Adaptation Module**, the adapted reference trajectories are used as either reference trajectories, or constraints to the control formulation.
 
 # Discussions
 
