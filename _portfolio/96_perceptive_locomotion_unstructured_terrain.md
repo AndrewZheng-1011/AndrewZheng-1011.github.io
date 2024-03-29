@@ -57,7 +57,7 @@ The motion adapter in this work extends the [legged_planner](https://github.com/
 ### Perceptive Leg Adaptation Module
 Correspondingly, the perceptive leg adaptation module tries to address the following maximization problem for traversability $T(\mathbf{x})$:
 
-$$max_{\mathbf{p_i}} T(\mathbf{x}) \\
+$$\max_{\mathbf{p}_i} T(\mathbf{x}) \\
 s.t. \\
 h_{foot,i}(\mathbf{x}) = h_{surface}(\mathbf{p}), \\
 T(\mathbf{x}) \geq 0,$$
