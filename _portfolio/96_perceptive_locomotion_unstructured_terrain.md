@@ -48,6 +48,11 @@ where $w_1 + w_2 = 1$ are the weights, $(h - \bar h)$ is the roughness defined b
 
 ## Legged Locomotion Adaptation Module
 
+### Motion Adapter
+
+### Perceptive Leg Adaptation Module
+
+## State Estimation and Control
 
 # Discussions
 
