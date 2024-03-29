@@ -42,15 +42,22 @@ It is best look at the framework from Figure 1 starting from the input sources. 
 
 Independently of this motion trajectory, there also exists the input source in the form of the environment the robot is occupying. A 2.5D discretized elevation map is constructed from the environment by utilizing the [grid map](https://github.com/ANYbotics/grid_map) package, where filters such as in-painting, denoising, and edge detection are readily availble. Therefore, to form a environmental traversability metric, we construct a layer in the grid map $T_{env}(\mathbf{p}) \in [0, 1]$, where $\mathbf{p} \in \mathbb{R}^2$ is the position in the transverse plane, to signify how traversable different position within the environment is:
 
-$$T(\mathbf{p}) =  w_1(h - \bar h) + w_2(s(h)),$$
+$$T_{env}(\mathbf{p}) =  w_1(h - \bar h) + w_2(s(h)) + w_3\sigma(h),$$
 
-where $w_1 + w_2 = 1$ are the weights, $(h - \bar h)$ is the roughness defined by the difference between the height and the smooth height, and $s(h)$ is the slope defined as the projection of the normal vector along gravity.
+where $w_1 + w_2 + w_3 = 1$ are the weights, $(h - \bar h)$ is the roughness defined by the difference between the height and the smooth height, $s(h)$ is the slope defined as the projection of the normal vector along gravity, and $\sigma$ is the edge cost defined by a edge detection kernel.
 
 ## Legged Locomotion Adaptation Module
+The Legged Locomotion Adaptation module, shown in Figure 1, utilizes the high level command interface and the map to transform the trajectories for single rigid body locomotion to one such that there is some _awareness_ of the terrain. These are decomposed into two components, the motion adapter module and the perceptive leg adaptation module, which will be explained in more detail in the two subsections.
 
 ### Motion Adapter
+The motion adapter in this work extends the [legged_planner](https://github.com/AndrewZheng-1011/legged_planner) repository to a motion adapter utilizing environmental information. The initial repository utilizes an abstract class to interface different commands for motion planning and a motion adapter as a filter to transform the input trajectories into ones suitable for a legged robot. Thus, to extend the work to perceptive motion planning, we adjust the height of the floating rigid body corresponding to the height of the environment and align the orientation of the robot such that floating body is aligned with the terrain.
 
 ### Perceptive Leg Adaptation Module
+Correspondingly, the perceptive leg adaptation module uses a local search-based method to maximize a the following traversability problem:
+$$max_{\mathbf{p_i}} T(\mathbf{x})$$
+$$s.t.$$ 
+$$h_{leg,i}(\mathbf{x}) = h_{surface}(\mathbf{p})$$
+$$T(\mathbf{x}) \geq 0$$
 
 ## State Estimation and Control
 
