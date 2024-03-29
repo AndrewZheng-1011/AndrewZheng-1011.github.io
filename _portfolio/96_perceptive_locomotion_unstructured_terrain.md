@@ -34,6 +34,7 @@ Hardware results w/ trot gait for stairs of 6-12cm in height and 25cm in depth.
     <source src="/videos/perceptive_locomotion_unstructured_terrain/experimental_stairs_trot.mp4" type="video/mp4">
 </video>
 
+
 # General Architecture Overview
 To understand briefly how the general architecture works, I will explain in more details about different components. More specifically, details about the the input sources and the Legged Locomotion Adaptaion Module will be expanded on while the controller and estimator will be briefly highlighted.
 
@@ -56,6 +57,7 @@ The motion adapter in this work extends the [legged_planner](https://github.com/
 Correspondingly, the perceptive leg adaptation module uses a local search-based method to maximize a the following traversability problem:
 
 $$max_{\mathbf{p_i}} T(\mathbf{x})$$
+
 $s.t.$
 
 $$h_{leg,i}(\mathbf{x}) = h_{surface}(\mathbf{p})$$
