@@ -54,11 +54,11 @@ The Legged Locomotion Adaptation module, shown in Figure 1, utilizes the high le
 The motion adapter in this work extends the [legged_planner](https://github.com/AndrewZheng-1011/legged_planner) repository to a motion adapter utilizing environmental information. The initial repository utilizes an abstract class to interface different commands for motion planning and a motion adapter as a filter to transform the input trajectories into ones suitable for a legged robot. Thus, to extend the work to perceptive motion planning, we adjust the height of the floating rigid body corresponding to the height of the environment and align the orientation of the robot such that floating body is aligned with the terrain.
 
 ### Perceptive Leg Adaptation Module
-Correspondingly, the perceptive leg adaptation module uses a local search-based method to maximize a the following traversability problem:
+Correspondingly, the perceptive leg adaptation module uses a local search-based method to maximize the following traversability problem:
 
 $$max_{\mathbf{p_i}} T(\mathbf{x})$$
 
-$s.t.$
+$$s.t. \\ testing$$
 
 $$h_{leg,i}(\mathbf{x}) = h_{surface}(\mathbf{p})$$
 
