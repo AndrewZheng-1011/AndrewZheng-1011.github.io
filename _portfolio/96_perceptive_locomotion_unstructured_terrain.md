@@ -84,4 +84,5 @@ The control problem heavily relies on the [ocs2](https://github.com/leggedroboti
 
 # References
 [1] F. Jenelten, T. Miki, A. E. Vijayan, M. Bjelonic and M. Hutter, "Perceptive Locomotion in Rough Terrain – Online Foothold Optimization," in IEEE Robotics and Automation Letters, vol. 5, no. 4, pp. 5370-5376, Oct. 2020, doi: 10.1109/LRA.2020.3007427
+
 [2] R. Grandia, F. Jenelten, S. Yang, F. Farshidian, and M. Hutter, “Perceptive Locomotion through Nonlinear Model Predictive Control,” (submitted to) IEEE Trans. Robot., no. August, 2022, doi: 10.48550/arXiv.2208.08373
