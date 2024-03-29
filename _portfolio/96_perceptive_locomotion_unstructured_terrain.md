@@ -54,15 +54,25 @@ The Legged Locomotion Adaptation module, shown in Figure 1, utilizes the high le
 The motion adapter in this work extends the [legged_planner](https://github.com/AndrewZheng-1011/legged_planner) repository to a motion adapter utilizing environmental information. The initial repository utilizes an abstract class to interface different commands for motion planning and a motion adapter as a filter to transform the input trajectories into ones suitable for a legged robot. Thus, to extend the work to perceptive motion planning, we adjust the height of the floating rigid body corresponding to the height of the environment and align the orientation of the robot such that floating body is aligned with the terrain.
 
 ### Perceptive Leg Adaptation Module
-Correspondingly, the perceptive leg adaptation module uses a local search-based method to maximize the following traversability problem:
+Correspondingly, the perceptive leg adaptation module tries to address the following maximization problem for traversability $T(\mathbf{x})$:
 
 $$max_{\mathbf{p_i}} T(\mathbf{x}) \\
 s.t. \\
-h_{leg,i}(\mathbf{x}) = h_{surface}(\mathbf{p}) \\
-T(\mathbf{x}) \geq 0$$
+h_{foot,i}(\mathbf{x}) = h_{surface}(\mathbf{p}), \\
+T(\mathbf{x}) \geq 0,$$
 
+where $\mathbf{p_i}$ are the foothold location for the $i$th leg, $T(\mathbf{x})$ is the traversability metric defined over the states of the legged robot $\mathbf{x}$, $h_{foot,i} = h_{surface}(\mathbf{p})$ ensures that the foot of the quadruped lies on the surface of the environment, and $T(\mathbf{x}) \geq 0$ is ensuring that the solution is over a traversability threshold.
 
-## State Estimation and Control
+There are have been various works that have address this some degree, this work looks to take a simplistic approach of using a local search base method to find locally optimal traversability foothold defined by the following metric:
+$$T(\mathbf{x}) = T_{env}(\mathbf{p}) + J_{default config}(\mathbf{x}),$$
+where $J_{default config}$ is a cost to such that the foothold selected is close to the default joint configuration. Note, better cost can be utilize that gives more stability notions, but default joint configuration is adequate enough.
+
+Once a foothold that is _aware_ of the environment has been selected, these are then utilized as contraints and reference to the model predictive controller.
+
+## State Estimation
+ 
+## Control
+The control problem heavily relies on the [ocs2] repository, that handles optimial control formulation for switched systems. As stated in the subsection **Perceptive Leg Adaptation Module**, the adapted reference trajectories are used as either reference trajectories, or constraints to the control formulation.
 
 # Discussions
 
