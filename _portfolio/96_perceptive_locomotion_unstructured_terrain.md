@@ -64,7 +64,7 @@ T(\mathbf{x}) \geq 0,$$
 
 where $\mathbf{p_i}$ are the foothold location for the $i$th leg, $T(\mathbf{x})$ is the traversability metric defined over the states of the legged robot $\mathbf{x}$, $h_{foot,i} = h_{surface}(\mathbf{p})$ ensures that the foot of the quadruped lies on the surface of the environment, and $T(\mathbf{x}) \geq 0$ is ensuring that the solution is over a traversability threshold.
 
-There are have been various works that have address this in some form and various degrees, but this work looks to take a simplistic approach by first finding a nominal foothold, similar to [3].
+There are have been various works that have address this in some form and various degrees (e.g. [1]-[3]), but this work looks to take a simplistic approach by first finding a nominal foothold, similar to [4].
 Then, a locally optimal traversability foothold is selected by using a search based method around the nominal, locally maximizing the following traversability metric:
 
 $$T(\mathbf{x}) = T_{env}(\mathbf{p}) + J_{default config}(\mathbf{x}),$$
@@ -76,7 +76,7 @@ Once a foothold that is _aware_ of the environment has been selected, these are 
 ## State Estimation
 In perceptive locomotion, where having good localization data is important for understanding where the robot is within the environment, this work utilizes a motion capture system to get accurate localization data. This helps in the generating accurate footholds from the Perceptive Leg Adaptation Module with respect to the environment.
 
-Note, however, we do interface the motion capture system with a Kalman filter from [3]. This allows us to utilize the Perceptive Leg Adaptation Module if the motion capture system is not running. However, due to the drift in estimation, the Perceptive Leg Adaptation Module starts selecting footholds that do not meet traversability constraints and/or wrong footholds that are not on the surface of the environment.
+Note, however, we do interface the motion capture system with a Kalman filter from [4]. This allows us to utilize the Perceptive Leg Adaptation Module if the motion capture system is not running. However, due to the drift in estimation, the Perceptive Leg Adaptation Module starts selecting footholds that do not meet traversability constraints and/or wrong footholds that are not on the surface of the environment.
 
 ## Control
 The control problem heavily relies on the [ocs2](https://github.com/leggedrobotics/ocs2) repository, that handles optimial control formulation for switched systems. As stated in the subsection **Perceptive Leg Adaptation Module**, the adapted reference trajectories are used as either reference trajectories, or constraints to the control formulation.
@@ -91,4 +91,6 @@ The control problem heavily relies on the [ocs2](https://github.com/leggedroboti
 
 [2] R. Grandia, F. Jenelten, S. Yang, F. Farshidian, and M. Hutter, “Perceptive Locomotion through Nonlinear Model Predictive Control,” (submitted to) IEEE Trans. Robot., no. August, 2022, doi: 10.48550/arXiv.2208.08373
 
-[3] G. Bledt, M. J. Powell, B. Katz, J. Di Carlo, P. M. Wensing and S. Kim, "MIT Cheetah 3: Design and Control of a Robust, Dynamic Quadruped Robot," 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Madrid, Spain, 2018, pp. 2245-2252, doi: 10.1109/IROS.2018.8593885.
+[3] F. Jenelten, R. Grandia, F. Farshidian and M. Hutter, "TAMOLS: Terrain-Aware Motion Optimization for Legged Systems," in IEEE Transactions on Robotics, vol. 38, no. 6, pp. 3395-3413, Dec. 2022, doi: 10.1109/TRO.2022.3186804.
+
+[4] G. Bledt, M. J. Powell, B. Katz, J. Di Carlo, P. M. Wensing and S. Kim, "MIT Cheetah 3: Design and Control of a Robust, Dynamic Quadruped Robot," 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Madrid, Spain, 2018, pp. 2245-2252, doi: 10.1109/IROS.2018.8593885.
