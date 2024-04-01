@@ -8,7 +8,7 @@ collection: portfolio
     <img src="/images/portfolio/perceptive_locomotion_unstructured_terrain/legged_locomotion_adaptation_module.png" />
     <figcaption>Figure 1: Schematic Diagram of Perceptive Legged Locomotion</figcaption>
 </p>
-As shown in Figure 1, this work utilizes a Legged Locomotion Adaptation Module to modify reference trajectories for legged locomotion given map information. 
+As shown in Figure 1, this work utilizes a Legged Locomotion Adaptation Module to modify reference trajectories for legged locomotion on uneven terrain. 
 By utilizing map information that describes the geometry, edge, and traversability of the environment and a high level motion command, this work categorizes the locomotion problem into two motion trajectories that are to be transformed:
 1. The center of mass trajectory for generic motion planning of a single rigid body over rough terrains
 2. Foothold / Swing Trajectory of the leg over rough terrains
