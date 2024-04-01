@@ -64,7 +64,7 @@ T(\mathbf{x}) \geq 0,$$
 
 where $\mathbf{p_i}$ are the foothold location for the $i$th leg, $T(\mathbf{x})$ is the traversability metric defined over the states of the legged robot $\mathbf{x}$, $h_{foot,i} = h_{surface}(\mathbf{p})$ ensures that the foot of the quadruped lies on the surface of the environment, and $T(\mathbf{x}) \geq 0$ is ensuring that the solution is over a traversability threshold.
 
-There are have been various works that have address this some degree, this work looks to take a simplistic approach of using a local search base method to find locally optimal traversability foothold around a nominal foothold defined by the following metric:
+There are have been various works that have address this in some form and various degrees, but this work looks to take a simplistic approach by using a local search base method to find locally optimal traversability foothold around a nominal foothold defined by the following metric:
 
 $$T(\mathbf{x}) = T_{env}(\mathbf{p}) + J_{default config}(\mathbf{x}),$$
 
@@ -73,7 +73,10 @@ where $J_{default config}$ is a cost that helps select footholds close to the de
 Once a foothold that is _aware_ of the environment has been selected, these are then utilized as contraints and reference to the model predictive controller.
 
 ## State Estimation
- 
+In perceptive locomotion, where having good localization data is important for understanding where the robot is within the environment, this work utilizes a motion capture system to get accurate localization data. This helps in the generating accurate footholds from the Perceptive Leg Adaptation Module with respect to the environment.
+
+Note, however, we do interface the motion capture system with a Kalman filter from [3]. This allows us to utilize the Perceptive Leg Adaptation Module if the motion capture system is not running. However, due to the drift in estimation, the Perceptive Leg Adaptation Module starts selecting footholds that do not meet traversability threshold constraintse and wrong footholds that are not on the surface of the environment.
+
 ## Control
 The control problem heavily relies on the [ocs2](https://github.com/leggedrobotics/ocs2) repository, that handles optimial control formulation for switched systems. As stated in the subsection **Perceptive Leg Adaptation Module**, the adapted reference trajectories are used as either reference trajectories, or constraints to the control formulation.
 
