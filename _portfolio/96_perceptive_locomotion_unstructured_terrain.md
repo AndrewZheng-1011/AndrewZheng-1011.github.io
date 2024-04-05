@@ -18,9 +18,16 @@ These trajectories are then used in the model predictive controller to find loca
 As a result, the methodology of adapting the trajectory to be locally optimized in the nonlinear model predictive controller (NMPC) works adequately well for the quadruped to walk over terrains such as ramps, stairs, pits, etc. Results can be seen in the subsection below, along with a case of failure.
 ## Simulation Results
 Simulation results of quadruped in a environment with stairs of 10cm in height and 20cm in depth.
-<video width="720" height="480" controls="controls">
-    <source src="/videos/perceptive_locomotion_unstructured_terrain/stairs_10cm_default_ee_pos_cost.mp4" type="video/mp4">
-</video>
+<div class="row">
+    <div class="col locomotion_videos">
+        <video width="360" height="240" controls="controls">
+            <source src="/videos/perceptive_locomotion_unstructured_terrain/stairs_10cm_default_ee_pos_cost.mp4" type="video/mp4">
+        </video>
+        <video width="360" height="240" controls="controls">
+            <source src="/videos/perceptive_locomotion_unstructured_terrain/stairs_10cm_default_ee_pos_cost.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
 
 ## Hardware Results
 Hardware results w/ static walking gait for stairs of 6-12cm in height and 25cm in depth.
