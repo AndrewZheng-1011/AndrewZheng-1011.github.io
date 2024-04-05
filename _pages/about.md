@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Hi!<br>
-My name is Andrew Zheng, and I just graduated with my M.S. Thesis in Mechanical Engineering at Clemson University. Currently work I am working for the Distributed Intelligence and Robot Autonomy (DIRA) lab where my main research focuses on designing safe motion planning and control for legged robots in unstructured environments.
+My name is Andrew Zheng, and I just graduated with my M.S. Thesis in Mechanical Engineering at Clemson University. During my M.S program, I worked at the Dynamics and Control for Autonomous and Intelligent System (DyCo AI) lab, where my main research was focused on motion planning and optimal control for legged systems in unstructured environments. I am currently looking for open positions in regards to motion planning and control. I have experience in both algorithm implementation into real-time hardware, artificial neural networks, and real-time control.
 <br>
 <br>
-If you wish to contact me, you can email me at azheng@clemson.edu
+If you wish to contact me, please email me at azheng@clemson.edu
