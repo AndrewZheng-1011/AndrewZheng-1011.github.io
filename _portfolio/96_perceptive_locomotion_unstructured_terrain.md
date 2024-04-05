@@ -21,7 +21,7 @@ Simulation results of quadruped in a environment with stairs of 10cm in height a
 <div class="row">
     <div class="col locomotion_videos">
         <video width="360" height="240" controls="controls">
-            <source src="/videos/perceptive_locomotion_unstructured_terrain/stairs_10cm_default_ee_pos_cost.mp4" type="video/mp4">
+            <source src="/videos/perceptive_locomotion_unstructured_terrain/potholes_20cm_floor.mp4" type="video/mp4">
         </video>
         <video width="360" height="240" controls="controls">
             <source src="/videos/perceptive_locomotion_unstructured_terrain/stairs_10cm_gap_5cm_static_walk.mp4" type="video/mp4">
