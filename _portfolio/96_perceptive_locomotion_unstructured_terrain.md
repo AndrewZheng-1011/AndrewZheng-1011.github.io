@@ -83,7 +83,7 @@ Once a foothold that is _aware_ of the environment has been selected, these are 
 ## State Estimation
 In perceptive locomotion, where having good localization data is important for understanding where the robot is within the environment, this work utilizes a motion capture system to get accurate localization data. This helps in the generating accurate footholds from the Perceptive Leg Adaptation Module with respect to the environment.
 
-Note, however, we do interface the motion capture system with a two staged Kalman filter described in [4]. This allows us to utilize the Perceptive Leg Adaptation Module without the motion capture system. However, due to the drift in estimation, the Perceptive Leg Adaptation Module starts selecting footholds that do not meet traversability constraints and/or wrong footholds that are not on the surface of the environment.
+Note, however, we do interface the motion capture system with a two staged Kalman filter described in [4]. This allows us to utilize the Perceptive Leg Adaptation Module with and without the motion capture system. However, due to the drift in estimation, the Perceptive Leg Adaptation Module starts selecting footholds that do not meet traversability constraints and/or wrong footholds that are not on the surface of the environment, we utilize the motion capture system to get ground truth localization to accurately select footholds.
 
 ## Control
 The control problem heavily relies on the [ocs2](https://github.com/leggedrobotics/ocs2) repository, that handles optimial control formulation for switched systems. As stated in the subsection **Perceptive Leg Adaptation Module**, the adapted reference trajectories are used as either reference trajectories, or constraints to the control formulation.
