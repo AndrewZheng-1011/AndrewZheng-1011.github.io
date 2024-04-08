@@ -59,7 +59,7 @@ where $w_1 + w_2 + w_3 = 1$ are the weights, $(h - \bar h)$ is the roughness def
 The Legged Locomotion Adaptation module, shown in Figure 1, utilizes the high level command interface and the map to transform the trajectories for single rigid body locomotion to one such that there is some _awareness_ of the terrain. These are decomposed into two components, the motion adapter module and the perceptive leg adaptation module, which will be explained in more detail in the two subsections.
 
 ### Motion Adapter
-The motion adapter in this work extends the [legged_planner](https://github.com/AndrewZheng-1011/legged_planner) repository to a motion adapter utilizing environmental information. The initial repository utilizes an abstract class to interface different commands for motion planning and a motion adapter as a filter to transform the input trajectories into ones suitable for a legged robot. Thus, to extend the work to perceptive motion planning, we adjust the height of the floating rigid body corresponding to the height of the environment and align the orientation of the robot such that floating body is aligned with the terrain.
+The motion adapter in this work extends the [legged_planner](https://github.com/AndrewZheng-1011/legged_planner) repository to a motion adapter utilizing environmental information. The initial repository utilizes an abstract class to interface different commands for motion planning and a motion adapter as a filter to transform the input trajectories into ones suitable for a legged robot. Thus, to extend the work to perceptive motion planning, we adjust the height of the floating rigid body corresponding to the height of the environment and align the orientation of the robot such that floating body is aligned with the terrain. These adapted trajectories are then used as reference for the nonlinear model predictive controller.
 
 ### Perceptive Leg Adaptation Module
 Correspondingly, the perceptive leg adaptation module tries to address the following maximization problem for traversability $T(\mathbf{x})$:
@@ -78,7 +78,7 @@ $$T(\mathbf{x}) = T_{env}(\mathbf{p}) + J_{default config}(\mathbf{x}),$$
 
 where $J_{default config}$ is a cost that helps select footholds close to the default joint configuration. Note, better cost can be utilize that gives more stability notions, but default joint configuration is adequate enough.
 
-Once a foothold that is _aware_ of the environment has been selected, these are then utilized as contraints and reference to the model predictive controller.
+Once a foothold that is _aware_ of the environment has been selected, these footholds are then utilized to form trajectories through hermite splines. These feet trajectories are then utilized as contraints in the nonlinear model predictive controller.
 
 ## State Estimation
 In perceptive locomotion, where having good localization data is important for understanding where the robot is within the environment, this work utilizes a motion capture system to get accurate localization data. This helps in the generating accurate footholds from the Perceptive Leg Adaptation Module with respect to the environment.
