@@ -88,9 +88,9 @@ Note, however, we do interface the motion capture system with a two staged Kalma
 ## Control
 The control problem heavily relies on the [ocs2](https://github.com/leggedrobotics/ocs2) repository, that handles optimial control formulation for switched systems. As stated in the subsection **Perceptive Leg Adaptation Module**, the adapted reference trajectories are used as either reference trajectories, or constraints to the control formulation.
 
-# Discussions
+[//]: <> (# Discussions)
 
-# Conclusions
+[//]: <> (# Conclusions)
 
 
 # References
