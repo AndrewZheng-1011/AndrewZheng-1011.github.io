@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Andrew Zheng"
 title_separator          : "-"
 name                     : &name "Andrew Zheng"
-description              : &description "M.S. student working for DyCo AI Labratory"
+description              : &description "M.S. student working for DyCo AI Laboratory"
 url                      : "https://AndrewZheng-1011.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : AndrewZheng-1011
@@ -84,7 +84,7 @@ author:
   avatar           : "Professional_Photo_Small.PNG"
   bio              : "Graduated with M.S. Thesis at Clemson University. Currently interested on working on motion planning and control for robotic systems"
   location         : "Clemson University"
-  employer         : "DyCo Lab AI Research Assistant"
+  employer         : "DyCo AI Lab Research Specialist"
 #  googlescholar    : "http://yourfullgooglescholarurl.com"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
