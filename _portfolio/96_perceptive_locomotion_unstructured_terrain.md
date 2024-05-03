@@ -20,13 +20,13 @@ As a result, the methodology of adapting the trajectory to be locally optimized 
 Simulation results of quadruped in a environment with potholes of 10cm in depth and stair environments with gap of 5cm.
 <div class="row">
     <div class="col locomotion_videos">
-        <video width="360" height="240" controls="controls">
+        <video width="240" height="160" controls="controls">
             <source src="/videos/perceptive_locomotion_unstructured_terrain/potholes_20cm_floor.mp4" type="video/mp4">
         </video>
-        <video width="360" height="240" controls="controls">
+        <video width="240" height="160" controls="controls">
             <source src="/videos/perceptive_locomotion_unstructured_terrain/stairs_10cm_gap_5cm_static_walk.mp4" type="video/mp4">
         </video>
-        <video width="360" height="240" controls="controls">
+        <video width="240" height="160" controls="controls">
             <source src="/videos/perceptive_locomotion_unstructured_terrain/parkour_success_static_walk.mp4" type="video/mp4">
         </video>
     </div>
