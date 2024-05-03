@@ -17,7 +17,7 @@ These trajectories are then used in the model predictive controller to find loca
 
 As a result, the methodology of adapting the trajectory to be locally optimized in the nonlinear model predictive controller (NMPC) works adequately well for the quadruped to walk over terrains such as ramps, stairs, pits, etc. Results can be seen in the subsection below, along with a case of failure.
 ## Simulation Results
-Simulation results of quadruped in a environment with potholes of 10cm in depth and stair environments with gap of 5cm.
+Simulation results of quadruped in a environment with potholes of 10cm in depth, stair environments with gap of 5cm, and a parkour course.
 <div class="row">
     <div class="col locomotion_videos">
         <video width="240" height="160" controls="controls">
