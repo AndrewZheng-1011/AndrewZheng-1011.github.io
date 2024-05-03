@@ -26,6 +26,9 @@ Simulation results of quadruped in a environment with potholes of 10cm in depth 
         <video width="360" height="240" controls="controls">
             <source src="/videos/perceptive_locomotion_unstructured_terrain/stairs_10cm_gap_5cm_static_walk.mp4" type="video/mp4">
         </video>
+        <video width="360" height="240" controls="controls">
+            <source src="/videos/perceptive_locomotion_unstructured_terrain/parkour_success_static_walk.mp4" type="video/mp4">
+        </video>
     </div>
 </div>
 
