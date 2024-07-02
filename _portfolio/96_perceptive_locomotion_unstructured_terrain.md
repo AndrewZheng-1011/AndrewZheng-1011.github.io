@@ -33,7 +33,7 @@ Simulation results of quadruped in a environment with potholes of 10cm in depth,
 </div>
 
 ## Hardware Results
-Hardware results w/ static walking gait for stairs of 6-12cm in height and 25cm in depth.
+Hardware results w/ static walking gait for stairs of 6-12cm in height and 25cm in depth and an environment with stepping stones.
 <div class="row">
     <div class="col locomotion_videos">
         <video width="360" height="240" controls="controls">
