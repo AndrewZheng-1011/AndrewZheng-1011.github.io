@@ -34,9 +34,16 @@ Simulation results of quadruped in a environment with potholes of 10cm in depth,
 
 ## Hardware Results
 Hardware results w/ static walking gait for stairs of 6-12cm in height and 25cm in depth.
-<video width="720" height="400" controls="controls">
-    <source src="/videos/perceptive_locomotion_unstructured_terrain/experimental_stairs_static_walk_edited.mp4" type="video/mp4">
-</video>
+<div class="row">
+    <div class="col locomotion_videos">
+        <video width="360" height="240" controls="controls">
+            <source src="/videos/perceptive_locomotion_unstructured_terrain/experimental_stairs_static_walk_edited.mp4" type="video/mp4">
+        </video>
+        <video width="360" height="240" controls="controls">
+            <source src="/videos/perceptive_locomotion_unstructured_terrain/experimental_parkour_stepping_stones_2_edited_compressed.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
 
 ## Failure Cases
 Hardware results w/ trot gait for stairs of 6-12cm in height and 25cm in depth.
